@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/content_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:Context=".UpdateEmailActivity">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="#343a40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpdateEmail" />
+
+    <EditText
+        android:id="@+id/edCurrentPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="#80343A40"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpdateEmail"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/edNewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/new_email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColorHint="#80343A40"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edOldEmail"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/edOldEmail"
+        tools:targetApi="o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/old_email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColorHint="#80343A40"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpdateEmail" />
+
+    <TextView
+            android:id="@+id/tvUpdateEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="casual"
+            android:onClick="viewTargetInfo"
+            android:text="@string/to_update_your_email_you_will_need_to_enter_your_current_email_and_password"
+            android:textAlignment="center"
+            android:textColor="#343A40"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_welcome" />
+
+    <ImageView
+            android:id="@+id/iv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:contentDescription="@string/aurorabanner"
+            android:src="@drawable/background_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvInfoMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:fontFamily="casual"
+            android:text="@string/update_your_email"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_welcome"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="@+id/iv_welcome"
+            app:layout_constraintTop_toTopOf="@+id/iv_welcome" />
+
+
+    <Button
+        android:id="@+id/btnUpdateEmail"
+        android:layout_width="251dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/login_button"
+        android:fontFamily="casual"
+        android:onClick="updateEmail"
+        android:text="@string/change_email"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCurrentPassword"
+        app:layout_constraintVertical_bias="0.078" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+

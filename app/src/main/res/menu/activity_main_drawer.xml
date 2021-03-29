@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:icon="@drawable/ic_home_black_24dp"
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:icon="@drawable/ic_person_black_24dp"
+            android:id="@+id/nav_info"
+            android:title="@string/current_info" />
+
+        <item
+            android:icon="@drawable/ic_star_black_24dp"
+            android:id="@+id/nav_goals"
+            android:title="@string/target_goals" />
+
+        <item
+            android:icon="@drawable/ic_track_changes_black_24dp"
+            android:id="@+id/nav_progress"
+            android:title="@string/track_your_progress" />
+
+        <item
+            android:icon="@drawable/ic_directions_walk_black_24dp"
+            android:id="@+id/nav_step"
+            android:title="@string/track_your_steps" />
+
+        <item
+            android:icon="@drawable/ic_insert_chart_black_24dp"
+            android:id="@+id/nav_current_levels"
+            android:title="@string/current_levels" />
+
+        <item
+            android:icon="@drawable/ic_photo_black_24dp"
+            android:id="@+id/nav_gallery"
+            android:title="@string/your_fitness_gallery" />
+
+    </group>
+
+</menu>

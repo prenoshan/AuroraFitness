@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Aurora</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Aurora Fitness</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_profile">My Profile</string>
+
+    <string name="menu_home">Home</string>
+    <string name="current_info">Current Info</string>
+    <string name="target_goals">Target Goals</string>
+    <string name="track_your_progress">Track Your Progress</string>
+    <string name="your_fitness_gallery">Your Fitness Gallery</string>
+    <string name="login">Login</string>
+    <string name="need_an_account">Need an account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login_button">Login</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="sign_in">Sign in</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="aurorabanner">AuroraBanner</string>
+    <string name="to_aurora_fitness">to Aurora Fitness</string>
+    <string name="welcome_user">Welcome User</string>
+    <string name="about">About</string>
+
+    <string name="about_summary">Aurora Fitness is a simple fitness app that allows you to monitor your weight, height
+    and the number of steps you take per day. We provide a weight tracker that allows you to monitor your daily weight,
+    to keep you on track with your weight loss journey. We provide a universal scale system so you can capture your
+    weight and height in metric or imperial. We also allow you to set goals for yourself such as the desired weight
+    you wish to achieve, or the number of steps you want to take for a day. Need help monitoring your diet and figure?, Not
+    a problem, we provide you with your very own fitness gallery in which you can capture photographs of your weight loss
+    journey, to help keep you motivated along the way. We will be with you every step of the way.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_weight">Enter Weight</string>
+    <string name="enter_your_information_below">Enter your information below</string>
+    <string name="enter_height">Enter height</string>
+    <string name="btnSave">Save</string>
+    <string name="metric">Metric</string>
+    <string name="metres">Metres</string>
+    <string name="tap_here_to_view_current_info">Tap here to view current info</string>
+    <string name="enter_target_weight">Enter Target Weight</string>
+    <string name="tap_here_to_view_target_info">Tap here to view target info</string>
+    <string name="enter_target_steps">Enter Target Steps</string>
+    <string name="enter_your_target_goals_below">Enter Your Target Goals Below</string>
+    <string name="track_your_daily_weight_below">Track Your Daily Weight Below</string>
+    <string name="view_progress">View progress</string>
+    <string name="add_to_list">Add to list</string>
+    <string name="your_daily_weight_changes">Your Daily Weight Changes</string>
+    <string name="change_username">Change Username</string>
+    <string name="change_password">Change Password</string>
+    <string name="edit_your_profile_info_below">Edit Your Profile Info Below</string>
+    <string name="change_info">Change Password</string>
+    <string name="view_your_current_information_below">View Your Current Information Below</string>
+    <string name="view_your_target_goals_below">View Your Target Goals Below</string>
+    <string name="no_images_available_please_upload_one">No images available, please upload one</string>
+    <string name="remove_image">Remove Image</string>
+    <string name="full_image">Full Image</string>
+    <string name="tap_here_to_view_your_current_info">Tap here to view your current info</string>
+    <string name="tap_here_to_view_your_current_targets">Tap here to view your current targets</string>
+    <string name="tap_here_to_update_your_email">Tap here to update your email</string>
+    <string name="update_your_email">Update Your Email</string>
+    <string name="change_email">Change Email</string>
+    <string name="to_update_your_email_you_will_need_to_enter_your_current_email_and_password">To update your email, you will need to enter your current email and password</string>
+    <string name="old_email">Old Email</string>
+    <string name="new_email">New Email</string>
+    <string name="password">Password</string>
+    <string name="current_levels">Current Levels</string>
+    <string name="your_current_levels">Your Current Levels</string>
+    <string name="kgs">Kgs</string>
+    <string name="start_counting_your_steps_below">Start counting your steps below</string>
+    <string name="start_counting">Start Counting</string>
+    <string name="stop_counting">Stop Counting</string>
+    <string name="track_your_steps">Track Your Steps</string>
+
+</resources>

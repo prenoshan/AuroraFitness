@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F9FA"
+        tools:Context=".TrackChangesFragment">
+
+        <ImageView
+            android:id="@+id/iv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:contentDescription="@string/aurorabanner"
+            android:src="@drawable/background_gradient"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="casual"
+            android:text="@string/kgs"
+            android:textAlignment="center"
+            android:textColor="#343a40"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switchMetric" />
+
+        <EditText
+            android:id="@+id/edDailyWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:width="255dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="casual"
+            android:hint="@string/enter_weight"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textColorHint="#80343A40"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.096"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switchMetric"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/tvInfoMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="casual"
+            android:text="@string/track_your_daily_weight_below"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_welcome"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/iv_welcome"
+            app:layout_constraintTop_toTopOf="@+id/iv_welcome" />
+
+        <Button
+            android:id="@+id/btnTrackWeight"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/login_button"
+            android:fontFamily="casual"
+            android:text="@string/add_to_list"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edDailyWeight"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnViewProgress"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/login_button"
+            android:fontFamily="casual"
+            android:text="@string/view_progress"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edDailyWeight" />
+
+        <Switch
+            android:id="@+id/switchMetric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="casual"
+            android:textColor="#343a40"
+            android:textOff="@string/off"
+            android:textOn="@string/on"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSettings" />
+
+        <TextView
+            android:id="@+id/tvSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="casual"
+            android:text="@string/metric"
+            android:textAlignment="center"
+            android:textColor="#343a40"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_welcome" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

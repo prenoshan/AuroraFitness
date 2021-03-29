@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F9FA"
+        tools:Context=".GraphFragment">
+
+        <TextView
+            android:id="@+id/tvSystemSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="casual"
+            android:text="@string/kgs"
+            android:textAlignment="center"
+            android:textColor="#343a40"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_welcome" />
+
+        <Switch
+            android:id="@+id/switchSystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="casual"
+            android:textColor="#343a40"
+            android:textOff="@string/off"
+            android:textOn="@string/on"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSystemSetting" />
+
+        <ImageView
+            android:id="@+id/iv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:contentDescription="@string/aurorabanner"
+            android:src="@drawable/background_gradient"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+        <TextView
+            android:id="@+id/tvCurrentLevels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="casual"
+            android:text="@string/your_current_levels"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_welcome" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/currentLevels"
+            android:layout_width="385dp"
+            android:layout_height="383dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_welcome">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/currentLevels"
+            app:layout_constraintEnd_toEndOf="@+id/currentLevels"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/currentLevels"
+            app:layout_constraintTop_toTopOf="@+id/currentLevels" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

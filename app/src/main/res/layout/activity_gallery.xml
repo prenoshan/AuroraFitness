@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context=".GalleryActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/emptyGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/no_images_available_please_upload_one"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/gallery"
+        app:layout_constraintEnd_toEndOf="@+id/gallery"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="@+id/gallery"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:menu_fab_size="normal"
+        app:menu_labels_textSize="18sp"
+        app:menu_fab_hide_animation="@anim/fab_scale_down"
+        app:menu_fab_show_animation="@anim/fab_scale_up"
+        app:layout_constraintBottom_toBottomOf="@+id/gallery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/openGallery"
+            android:onClick="openGallery"
+            android:layout_width="wrap_content"
+            app:fabSize="mini"
+            app:fab_label="Choose Images"
+            android:src="@drawable/ic_image_black_24dp"
+            android:layout_height="wrap_content"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:onClick="openCamera"
+            app:fabSize="mini"
+            app:fab_label="Open Camera"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:layout_height="wrap_content"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
